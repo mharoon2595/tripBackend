@@ -41,6 +41,6 @@ mongoose
   )
   .then(() => {
     console.log("Connected to server!");
-    app.listen(5000);
+    app.listen(process.env.PORT || 3000);
   })
   .catch((err) => console.log(err));
